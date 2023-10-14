@@ -358,9 +358,9 @@ public class DoiMatKhauJDialog extends javax.swing.JDialog {
     }
 
     private static String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-    private static String dburl = "jdbc:sqlserver://localhost:1433;database=duan1";
+    private static String dburl = "jdbc:sqlserver://localhost:1433;database=duan1_final";
     private static String username = "sa";
-    private static String password = "123";
+    private static String password = "P@ssword123456";
 
     void doiMK() {
         String manv = txtMaNV.getText();

@@ -1380,9 +1380,9 @@ public class NhanVienUI extends javax.swing.JFrame {
     }
 
     public void XuatHoaDon1() {// xuất hóa đơn sau khi thanh toán
-        String dburl = "jdbc:sqlserver://localhost:1433;database=duan1";
+        String dburl = "jdbc:sqlserver://localhost:1433;database=duan1_final";
         String username = "sa";
-        String password = "123";
+        String password = "P@ssword123456";
         try {
             Connection conn = DriverManager.getConnection(dburl, username, password);//Kết nối CSDL bằng đối tượng Connection
             String sql = ""

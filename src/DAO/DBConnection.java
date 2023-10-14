@@ -22,7 +22,7 @@ public class DBConnection {
            
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             cons = DriverManager.getConnection(
-                    "jdbc:sqlserver://127.0.0.1:1433;databaseName=duan1_final", "sa", "123");
+                    "jdbc:sqlserver://127.0.0.1:1433;databaseName=duan1_final", "sa", "P@ssword123456");
         } catch (Exception e) {
             e.printStackTrace();
         }

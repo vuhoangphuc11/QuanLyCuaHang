@@ -3,12 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/vuhoa/Documents/NetBeansProjects/FPOLY_DA1/src/Utils/XExcel.java</file>
-            <file>file:/C:/Users/vuhoa/Documents/NetBeansProjects/FPOLY_DA1/src/ui/QuanLyNhaCungCapJPanel.java</file>
-            <file>file:/C:/Users/vuhoa/Documents/NetBeansProjects/FPOLY_DA1/src/ui/QuanLyDonHangJPanel.java</file>
-            <file>file:/C:/Users/vuhoa/Documents/NetBeansProjects/FPOLY_DA1/src/ui/QuanLySanPhamJPanel.java</file>
-            <file>file:/C:/Users/vuhoa/Documents/NetBeansProjects/FPOLY_DA1/src/ui/QuanLyKhachHangJPanel.java</file>
-            <file>file:/C:/Users/vuhoa/Documents/NetBeansProjects/FPOLY_DA1/src/ui/QuanLyNhanVienJPanel.java</file>
+            <file>file:/C:/UIT/HK3/Java/StoreManager/src/Utils/XJdbc.java</file>
+            <file>file:/C:/UIT/HK3/Java/StoreManager/src/DAO/DBConnection.java</file>
         </group>
     </open-files>
 </project-private>

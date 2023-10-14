@@ -12,6 +12,7 @@ import Service.ThongKeService;
 import Service.ThongKeServiceIml;
 import java.awt.CardLayout;
 import java.awt.Dimension;
+import java.util.List;
 import javax.swing.JPanel;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
@@ -31,7 +32,7 @@ public class QuanLyThongKeController {
     }
 
     public void setDateToChart(JPanel jpnItem, Integer nam) {
-        var listItem = thongKeService.getListByKhachHang(nam);
+         List<KhachHangBean> listItem = thongKeService.getListByKhachHang(nam);
         if (listItem != null) {
             DefaultCategoryDataset dataset = new DefaultCategoryDataset();
             for (KhachHangBean item : listItem) {
@@ -49,7 +50,7 @@ public class QuanLyThongKeController {
     }
 
     public void setDateToChart1(JPanel jpnItem, Integer nam) {
-        var listItem = thongKeService.getListByDoanhThu(nam);
+         List<SanPhamBean> listItem  = thongKeService.getListByDoanhThu(nam);
         if (listItem != null) {
             DefaultCategoryDataset dataset = new DefaultCategoryDataset();
             for (SanPhamBean item : listItem) {
@@ -66,7 +67,7 @@ public class QuanLyThongKeController {
         }
     }
     public void setChartLuongSanPham(JPanel jpnItem, Integer nam) {
-        var listItem = thongKeService.getListBySanPham(nam);
+        List<ThongKeSanPhamBean> listItem = thongKeService.getListBySanPham(nam);
         if (listItem != null) {
             DefaultCategoryDataset dataset = new DefaultCategoryDataset();
             for (ThongKeSanPhamBean item : listItem) {
