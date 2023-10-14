@@ -15,6 +15,7 @@ public class XJdbc {
     /*
      * Nạp driver
      */
+	 
     static{
         try {            
             Class.forName(driver);
