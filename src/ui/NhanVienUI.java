@@ -25,28 +25,21 @@ import Utils.MsgBox;
 import Utils.XChuyenDoiTien;
 import Utils.XDate;
 import Utils.XImage;
-import Utils.XJdbc;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.ArrayList;
-import java.util.Hashtable;
 import java.util.List;
 import java.util.Vector;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
-import javax.swing.JComboBox;
-import javax.swing.JFileChooser;
 import javax.swing.Timer;
-import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
-import javax.swing.table.TableColumnModel;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -56,7 +49,6 @@ import net.sf.jasperreports.engine.design.JRDesignQuery;
 import net.sf.jasperreports.engine.design.JasperDesign;
 import net.sf.jasperreports.engine.xml.JRXmlLoader;
 import net.sf.jasperreports.view.JasperViewer;
-import org.jfree.ui.Spinner;
 
 /**
  *
@@ -681,8 +673,8 @@ public class NhanVienUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
-        // TODO add your handling code here:
         this.dispose();
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }//GEN-LAST:event_jLabel14MouseClicked
 
     private void tblSanPhamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblSanPhamMouseClicked
@@ -1363,7 +1355,7 @@ public class NhanVienUI extends javax.swing.JFrame {
             dh.setTongTien(tinhTong());
             dhdao.insert(dh);// thêm đơn hàng      
         } catch (Exception e) {
-            MsgBox.alert(this, "Lỗi truy vấn!");
+            MsgBox.alert(this, "Lỗi truy vấn!"+e);
         }
     }
 

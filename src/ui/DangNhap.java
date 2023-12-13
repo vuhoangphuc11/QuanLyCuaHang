@@ -244,8 +244,8 @@ public class DangNhap extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
-        // TODO add your handling code here:
         this.dispose();
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }//GEN-LAST:event_jLabel6MouseClicked
 
     private void txtMaNVFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtMaNVFocusGained
