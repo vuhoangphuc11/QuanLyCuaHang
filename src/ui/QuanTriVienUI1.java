@@ -269,10 +269,10 @@ public class QuanTriVienUI1 extends javax.swing.JFrame {
         lblTenQuanTriVien.setForeground(new java.awt.Color(255, 255, 255));
         lblTenQuanTriVien.setText("Họ Tên");
         lblTenQuanTriVien.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
             public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
                 lblTenQuanTriVienAncestorAdded(evt);
-            }
-            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
             }
             public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
             }
@@ -476,8 +476,8 @@ public class QuanTriVienUI1 extends javax.swing.JFrame {
     }//GEN-LAST:event_kButton1ActionPerformed
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
-        // TODO add your handling code here:
         this.dispose();
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }//GEN-LAST:event_jLabel6MouseClicked
 
     private void lblDongHoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblDongHoMouseClicked
