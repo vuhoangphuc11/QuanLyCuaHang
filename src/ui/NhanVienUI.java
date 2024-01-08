@@ -1406,7 +1406,7 @@ public class NhanVienUI extends javax.swing.JFrame {
             JasperReport jreReport = JasperCompileManager.compileReport(jdesDesign);
             JasperPrint jasperPrint = JasperFillManager.fillReport(jreReport, null, conn);
             JasperViewer.viewReport(jasperPrint, false);
-            JasperExportManager.exportReportToPdfFile(jasperPrint, "test.pdf");
+            JasperExportManager.exportReportToPdfFile(jasperPrint, "HoaDonBanHang.pdf");
 
         } catch (Exception e) {
             MsgBox.alert(null, "Lỗi");
